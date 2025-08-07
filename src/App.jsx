@@ -7,6 +7,7 @@ import VerifyOTP from "./pages/auth/VerifyOTP";
 import ProtectedRoute from "./pages/routes/ProtectedRoute";
 import VerifyResetOTP from "./pages/auth/VerifyResetOTP";
 import Dashboard from "./pages/home/Dashboard";
+import Homepage from "./pages/home/Homepage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           }
         />
 
+        <Route path="/" element={<Homepage />} />
         <Route path="/register" element={<Register />} />
         <Route path="/verify-otp" element={<VerifyOTP />} />
         <Route path="/login" element={<Login />} />
